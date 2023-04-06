@@ -1,0 +1,77 @@
+body{
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+.header{
+  display: flex;
+  background-image: linear-gradient(to right, rgb(123, 1, 139) , rgb(255, 0, 242));
+align-items: center;
+height: 65px;
+}
+.header>h3{
+  color: white;
+  font-weight: 900;
+  margin-left: 50px;
+
+}
+.header>p{
+  
+  float: right;
+  /* text-align: center; */
+  margin-left: 40em;
+  color: white;
+  font-weight: 600;
+}
+.form{
+  margin: auto;
+}
+.input1{
+  width: 73%;
+  margin-left: 11em;
+}
+.input2{
+  width: 66%;
+  margin-left: 5em;}
+.button{
+margin: auto;
+  text-align: center;
+  width: 80%;
+  color: white;
+  font-size: 20px;
+  background-image: linear-gradient(to right, rgb(123, 1, 139) , rgb(255, 0, 242));
+
+}
+.box{
+  height: 80px;
+  border: 1px solid rgb(0, 0, 0);
+  display: inline-block;
+  padding: 90px ;
+  margin: 10px;
+
+}
+.memeTopText{
+      
+      font-size: 61px; 
+      color: rgb(246, 0, 0);
+      font-weight: 1000;
+      position: absolute;
+      margin-left: 10em;
+}
+.memeBottomText{
+ 
+    position: absolute;
+    
+    margin-left: 10em;
+    margin-top: 5em;
+    font-size: 61px; 
+      color: rgb(246, 0, 0);
+      font-weight: 1000;
+    /* margin-top: 5px; */
+}
+
+.image{
+  margin: auto;
+  display: flex;
+  width: 26%;
+height: 100%;
+}
