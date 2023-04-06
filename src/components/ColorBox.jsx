@@ -1,7 +1,7 @@
 import React from 'react'
 import ColorData from '../colorData'
 import { useState } from 'react'
-import 'E:/renuka/meme-generator/src/components/App.css'
+import 'E:/renuka/practice-code/src/components/App.css'
 
 const ColorBox = () => {
   const [square,setSquare]=useState(ColorData)
@@ -12,7 +12,6 @@ const ColorBox = () => {
       return squares.id===id ? {...squares,on: !squares.on} :squares
     })
   })
-
  }
     // setSquare(prevSquare=>{
     //   const newSquare=[];

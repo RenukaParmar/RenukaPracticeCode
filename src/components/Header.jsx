@@ -1,5 +1,5 @@
 import React from 'react'
-import  'E:/renuka/meme-generator/src/components/App.css'
+import  'E:/renuka/practice-code/src/components/App.css'
 const Header = () => {
   return (
     <div className='header container-fluid'>

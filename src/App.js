@@ -13,13 +13,14 @@ import Message from './components/Message'
 import StarToggling from './components/StarToggling'
 import Eg from './components/windowTracker'
 import EffectHook from './components/UseEffect'
+import ModeOn from './components/ModeOn'
 
 function App() {
 
   return (
     <>
-      <Header/>
-   <Meme/>
+      {/* <Header/>
+   <Meme/> */}
       {/* <AddArray/> */}
       {/* <ColorBox /> */}
       {/* <Count /> */}
@@ -31,6 +32,7 @@ function App() {
       {/* <StarToggling /> */}
       {/* <EffectHook /> */}
       {/* <Eg /> */}
+      <ModeOn/>
     </>
   );
 }

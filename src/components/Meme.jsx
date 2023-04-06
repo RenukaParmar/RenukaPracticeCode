@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-// import memesData from 'E:/renuka/meme-generator/src/memesData.js'
+// import memesData from 'E:/renuka/practice-code/src/memesData.js'
 import './App.css';
 
 import { useState } from 'react'
@@ -11,11 +11,19 @@ const Meme = () => {
     randomUrl: "cat.png"
   })
   const [allMemeImage, setAllMemeImage] = useState([])
- useEffect(()=>{
-  fetch(' http://localhost:3000/getImage')
-  .then(response=>response.json())
-    .then(data=>setAllMemeImage(data))
- },[])
+//  useEffect(()=>{
+//   fetch(' http://localhost:3000/getImage')
+//   .then(response=>response.json())
+//     .then(data=>setAllMemeImage(data))
+//  },[])
+useEffect(()=>{
+async function getmeme(){
+  const res=await fetch (' http://localhost:3000/getImage')
+  const data=await res.json()
+  setAllMemeImage(data)
+}
+getmeme()
+},[])
 
   const getImage = (e) => {
     e.preventDefault()
