@@ -6,34 +6,13 @@ const ModeOn = () => {
     function handleChange() {
         setMode((prevMode) =>!prevMode)
     }
-   
     return (
         <div>
-            <div className='header container-fluid'>
-    </div>
-            <form >
-                <div className='buttonMode' >
-                    <label className="form-check-label me-1 mt-1"
-                        htmlFor="flexSwitchCheckDefault">Light</label>
-                    <div className="form-check form-switch">
-                        <input className="form-check-input form-check form-switch"
-                             role="switch" id="flexSwitchCheckDefault"
-                            type="checkbox"
-                            onChange={handleChange}
-                            defaultChecked={mode}
-                            // onChange={setMode}
-                             />
-                    </div>
-                    <label className="form-check-label ms-1 mt-1"
-                        htmlFor="flexSwitchCheckDefault">Dark</label>
-                </div>
-            </form>
-            <Main mode={mode}/>
-
+           <SwitchMode mode={mode} handleChange={handleChange}/>
+            <Main mode={mode} handleChange={handleChange}/>
         </div>
     )
 }
-
 export default ModeOn
 
 function Main(props) {
@@ -54,4 +33,27 @@ function Main(props) {
             </div>
         </>
     )
+}
+function SwitchMode(props){
+return(
+    <>
+     <form >
+                <div className='buttonMode' >
+                    <label className="form-check-label me-1 mt-1"
+                        htmlFor="flexSwitchCheckDefault">Light</label>
+                    <div className="form-check form-switch">
+                        <input className="form-check-input form-check form-switch"
+                             role="switch" id="flexSwitchCheckDefault"
+                            type="checkbox"
+                            onChange={props.handleChange}
+                            defaultChecked={props.mode}
+                            // onChange={setMode}
+                             />
+                    </div>
+                    <label className="form-check-label ms-1 mt-1"
+                        htmlFor="flexSwitchCheckDefault">Dark</label>
+                </div>
+            </form>
+    </>
+)
 }
